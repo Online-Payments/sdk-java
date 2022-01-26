@@ -10,7 +10,7 @@
 
 	<name>onlinepayments-sdk-java</name>
 	<description>SDK to communicate with the payment platform using the server API</description>
-	<url>https://github.com/online-payments/sdk-java</url>
+	<url>https://github.com/Online-Payments/sdk-java</url>
 
 	<organization>
 		<name>Online Payments</name>
@@ -19,7 +19,7 @@
 	<licenses>
 		<license>
 			<name>MIT</name>
-			<url>https://github.com/online-payments/sdk-java/blob/master/LICENSE.txt</url>
+			<url>https://github.com/Online-Payments/sdk-java/blob/master/LICENSE.txt</url>
 		</license>
 	</licenses>
 
@@ -32,14 +32,14 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git@github.com:online-payments/sdk-java.git</connection>
-		<developerConnection>scm:git:git@github.com:online-payments/sdk-java.git</developerConnection>
-		<url>https://github.com/online-payments/sdk-java</url>
+		<connection>scm:git:git@github.com:Online-Payments/sdk-java.git</connection>
+		<developerConnection>scm:git:git@github.com:Online-Payments/sdk-java.git</developerConnection>
+		<url>https://github.com/Online-Payments/sdk-java</url>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/online-payments/sdk-java/issues</url>
+		<url>https://github.com/Online-Payments/sdk-java/issues</url>
 	</issueManagement>
 
 	<properties>
