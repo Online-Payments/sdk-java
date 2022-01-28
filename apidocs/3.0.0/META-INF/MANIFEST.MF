@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: onlinepayments-sdk-java
+Implementation-Version: 3.0.0
+Archiver-Version: Plexus Archiver
+Built-By: Online Payments
+Specification-Vendor: Online Payments
+Specification-Title: onlinepayments-sdk-java
+Created-By: Apache Maven 3.8.3
+Build-Jdk: 1.8.0_221
+Specification-Version: 3.0.0
+Implementation-Vendor: Online Payments
+
