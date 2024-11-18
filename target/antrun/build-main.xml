@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="C:\Projects\Wordline\online-payments\sdk-java\target/apidocs/META-INF">
+    <fileset dir="C:\Projects\Wordline\online-payments\sdk-java">
+      <include name="LICENSE.txt"/>
+    </fileset>
+  </copy>
+</target>
+</project>
