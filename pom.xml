@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.worldline-solutions</groupId>
     <artifactId>onlinepayments-sdk-java</artifactId>
-    <version>6.1.0</version>
+    <version>6.2.0</version>
     <packaging>jar</packaging>
 
     <name>onlinepayments-sdk-java</name>
@@ -88,7 +88,7 @@
                                         </goals>
                                     </pluginExecutionFilter>
                                     <action>
-                                        <ignore />
+                                        <ignore/>
                                     </action>
                                 </pluginExecution>
                             </pluginExecutions>
@@ -204,7 +204,7 @@
                             <target>
                                 <copy todir="${project.build.directory}/apidocs/META-INF">
                                     <fileset dir="${basedir}">
-                                        <include name="LICENSE.txt" />
+                                        <include name="LICENSE.txt"/>
                                     </fileset>
                                 </copy>
                             </target>
@@ -387,18 +387,6 @@
     <profiles>
         <profile>
             <id>release</id>
-
-            <distributionManagement>
-                <repository>
-                    <id>ossrh</id>
-                    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-                </repository>
-                <snapshotRepository>
-                    <id>ossrh</id>
-                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-                </snapshotRepository>
-            </distributionManagement>
-
             <build>
                 <plugins>
                     <plugin>

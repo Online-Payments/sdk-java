@@ -10,6 +10,8 @@ public class RefundRequest {
 
     private String captureId;
 
+    private OmnichannelRefundSpecificInput omnichannelRefundSpecificInput;
+
     private OperationPaymentReferences operationReferences;
 
     private String reason;
@@ -61,6 +63,28 @@ public class RefundRequest {
     }
 
     /**
+     * Object containing the additional refund details for an Omnichannel merchant
+     */
+    public OmnichannelRefundSpecificInput getOmnichannelRefundSpecificInput() {
+        return omnichannelRefundSpecificInput;
+    }
+
+    /**
+     * Object containing the additional refund details for an Omnichannel merchant
+     */
+    public void setOmnichannelRefundSpecificInput(OmnichannelRefundSpecificInput value) {
+        this.omnichannelRefundSpecificInput = value;
+    }
+
+    /**
+     * Object containing the additional refund details for an Omnichannel merchant
+     */
+    public RefundRequest withOmnichannelRefundSpecificInput(OmnichannelRefundSpecificInput value) {
+        this.omnichannelRefundSpecificInput = value;
+        return this;
+    }
+
+    /**
      * Object that holds all reference properties that are linked to this transaction
      */
     public OperationPaymentReferences getOperationReferences() {
@@ -83,21 +107,21 @@ public class RefundRequest {
     }
 
     /**
-     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.§
+     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.Â§
      */
     public String getReason() {
         return reason;
     }
 
     /**
-     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.§
+     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.Â§
      */
     public void setReason(String value) {
         this.reason = value;
     }
 
     /**
-     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.§
+     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.Â§
      */
     public RefundRequest withReason(String value) {
         this.reason = value;
