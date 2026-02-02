@@ -8,6 +8,8 @@ public class TokenResponse {
 
     private TokenCard card;
 
+    private CrmToken crmToken;
+
     private TokenEWallet eWallet;
 
     private ExternalTokenLinked externalTokenLinked;
@@ -15,6 +17,8 @@ public class TokenResponse {
     private String id;
 
     private Boolean isTemporary;
+
+    private NetworkTokenLinked networkTokenLinked;
 
     private Integer paymentProductId;
 
@@ -37,6 +41,28 @@ public class TokenResponse {
      */
     public TokenResponse withCard(TokenCard value) {
         this.card = value;
+        return this;
+    }
+
+    /**
+     * The CRM (Customer Relationship Management) token group. CRM tokens are available to enhance knowledge of a merchant's customers by attempting to identify the customer.
+     */
+    public CrmToken getCrmToken() {
+        return crmToken;
+    }
+
+    /**
+     * The CRM (Customer Relationship Management) token group. CRM tokens are available to enhance knowledge of a merchant's customers by attempting to identify the customer.
+     */
+    public void setCrmToken(CrmToken value) {
+        this.crmToken = value;
+    }
+
+    /**
+     * The CRM (Customer Relationship Management) token group. CRM tokens are available to enhance knowledge of a merchant's customers by attempting to identify the customer.
+     */
+    public TokenResponse withCrmToken(CrmToken value) {
+        this.crmToken = value;
         return this;
     }
 
@@ -116,6 +142,28 @@ public class TokenResponse {
      */
     public TokenResponse withIsTemporary(Boolean value) {
         this.isTemporary = value;
+        return this;
+    }
+
+    /**
+     * Object containing Network Token details, when the Network Token was created on behalf of the merchant and is activated.
+     */
+    public NetworkTokenLinked getNetworkTokenLinked() {
+        return networkTokenLinked;
+    }
+
+    /**
+     * Object containing Network Token details, when the Network Token was created on behalf of the merchant and is activated.
+     */
+    public void setNetworkTokenLinked(NetworkTokenLinked value) {
+        this.networkTokenLinked = value;
+    }
+
+    /**
+     * Object containing Network Token details, when the Network Token was created on behalf of the merchant and is activated.
+     */
+    public TokenResponse withNetworkTokenLinked(NetworkTokenLinked value) {
+        this.networkTokenLinked = value;
         return this;
     }
 

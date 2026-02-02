@@ -18,6 +18,8 @@ public class RefundRequest {
 
     private PaymentReferences references;
 
+    private RefundRedirectPaymentMethodSpecificInput refundRedirectPaymentMethodSpecificInput;
+
     /**
      * Object containing amount and ISO currency code attributes
      */
@@ -107,21 +109,21 @@ public class RefundRequest {
     }
 
     /**
-     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.Â§
+     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.§
      */
     public String getReason() {
         return reason;
     }
 
     /**
-     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.Â§
+     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.§
      */
     public void setReason(String value) {
         this.reason = value;
     }
 
     /**
-     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.Â§
+     * The reason for the refund. This will be available in our portal and reports for your information only. It will NOT appear in the consumer bank statement or yours.§
      */
     public RefundRequest withReason(String value) {
         this.reason = value;
@@ -147,6 +149,28 @@ public class RefundRequest {
      */
     public RefundRequest withReferences(PaymentReferences value) {
         this.references = value;
+        return this;
+    }
+
+    /**
+     * Object containing the specific input details for refunds for redirection payment methods.
+     */
+    public RefundRedirectPaymentMethodSpecificInput getRefundRedirectPaymentMethodSpecificInput() {
+        return refundRedirectPaymentMethodSpecificInput;
+    }
+
+    /**
+     * Object containing the specific input details for refunds for redirection payment methods.
+     */
+    public void setRefundRedirectPaymentMethodSpecificInput(RefundRedirectPaymentMethodSpecificInput value) {
+        this.refundRedirectPaymentMethodSpecificInput = value;
+    }
+
+    /**
+     * Object containing the specific input details for refunds for redirection payment methods.
+     */
+    public RefundRequest withRefundRedirectPaymentMethodSpecificInput(RefundRedirectPaymentMethodSpecificInput value) {
+        this.refundRedirectPaymentMethodSpecificInput = value;
         return this;
     }
 }

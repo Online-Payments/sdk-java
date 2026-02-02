@@ -8,6 +8,8 @@ public class RedirectPaymentMethodSpecificInput {
 
     private String paymentOption;
 
+    private RedirectPaymentProduct11SpecificInput paymentProduct11SpecificInput;
+
     private RedirectPaymentProduct3203SpecificInput paymentProduct3203SpecificInput;
 
     private RedirectPaymentProduct3204SpecificInput paymentProduct3204SpecificInput;
@@ -15,6 +17,8 @@ public class RedirectPaymentMethodSpecificInput {
     private RedirectPaymentProduct3302SpecificInput paymentProduct3302SpecificInput;
 
     private RedirectPaymentProduct3306SpecificInput paymentProduct3306SpecificInput;
+
+    private RedirectPaymentProduct3307SpecificInput paymentProduct3307SpecificInput;
 
     private RedirectPaymentProduct5001SpecificInput paymentProduct5001SpecificInput;
 
@@ -66,6 +70,28 @@ public class RedirectPaymentMethodSpecificInput {
      */
     public RedirectPaymentMethodSpecificInput withPaymentOption(String value) {
         this.paymentOption = value;
+        return this;
+    }
+
+    /**
+     * Object contains the inputs required to perform a bank transfer using payment product 11.
+     */
+    public RedirectPaymentProduct11SpecificInput getPaymentProduct11SpecificInput() {
+        return paymentProduct11SpecificInput;
+    }
+
+    /**
+     * Object contains the inputs required to perform a bank transfer using payment product 11.
+     */
+    public void setPaymentProduct11SpecificInput(RedirectPaymentProduct11SpecificInput value) {
+        this.paymentProduct11SpecificInput = value;
+    }
+
+    /**
+     * Object contains the inputs required to perform a bank transfer using payment product 11.
+     */
+    public RedirectPaymentMethodSpecificInput withPaymentProduct11SpecificInput(RedirectPaymentProduct11SpecificInput value) {
+        this.paymentProduct11SpecificInput = value;
         return this;
     }
 
@@ -158,6 +184,28 @@ public class RedirectPaymentMethodSpecificInput {
     }
 
     /**
+     * Object containing specific input required for Klarna payments (Payment product ID 3307)
+     */
+    public RedirectPaymentProduct3307SpecificInput getPaymentProduct3307SpecificInput() {
+        return paymentProduct3307SpecificInput;
+    }
+
+    /**
+     * Object containing specific input required for Klarna payments (Payment product ID 3307)
+     */
+    public void setPaymentProduct3307SpecificInput(RedirectPaymentProduct3307SpecificInput value) {
+        this.paymentProduct3307SpecificInput = value;
+    }
+
+    /**
+     * Object containing specific input required for Klarna payments (Payment product ID 3307)
+     */
+    public RedirectPaymentMethodSpecificInput withPaymentProduct3307SpecificInput(RedirectPaymentProduct3307SpecificInput value) {
+        this.paymentProduct3307SpecificInput = value;
+        return this;
+    }
+
+    /**
      * Object containing specific input required for Bizum payments
      */
     public RedirectPaymentProduct5001SpecificInput getPaymentProduct5001SpecificInput() {
@@ -224,21 +272,21 @@ public class RedirectPaymentMethodSpecificInput {
     }
 
     /**
-     * Object containing specific input required for Chèque-Vacances Connect payments (Payment product ID 5403)
+     * Object containing specific input required for Chèque-Vacances Connect payments via Limonetik (Payment product ID 5403)
      */
     public RedirectPaymentProduct5403SpecificInput getPaymentProduct5403SpecificInput() {
         return paymentProduct5403SpecificInput;
     }
 
     /**
-     * Object containing specific input required for Chèque-Vacances Connect payments (Payment product ID 5403)
+     * Object containing specific input required for Chèque-Vacances Connect payments via Limonetik (Payment product ID 5403)
      */
     public void setPaymentProduct5403SpecificInput(RedirectPaymentProduct5403SpecificInput value) {
         this.paymentProduct5403SpecificInput = value;
     }
 
     /**
-     * Object containing specific input required for Chèque-Vacances Connect payments (Payment product ID 5403)
+     * Object containing specific input required for Chèque-Vacances Connect payments via Limonetik (Payment product ID 5403)
      */
     public RedirectPaymentMethodSpecificInput withPaymentProduct5403SpecificInput(RedirectPaymentProduct5403SpecificInput value) {
         this.paymentProduct5403SpecificInput = value;
@@ -312,21 +360,21 @@ public class RedirectPaymentMethodSpecificInput {
     }
 
     /**
-     * Object containing specific input required for ChÃ¨que-Vacances Connect payments via ANCV (Payment product ID 5412)
+     * Object containing specific input required for Chèque-Vacances Connect payments via ANCV (Payment product ID 5412)
      */
     public RedirectPaymentProduct5412SpecificInput getPaymentProduct5412SpecificInput() {
         return paymentProduct5412SpecificInput;
     }
 
     /**
-     * Object containing specific input required for ChÃ¨que-Vacances Connect payments via ANCV (Payment product ID 5412)
+     * Object containing specific input required for Chèque-Vacances Connect payments via ANCV (Payment product ID 5412)
      */
     public void setPaymentProduct5412SpecificInput(RedirectPaymentProduct5412SpecificInput value) {
         this.paymentProduct5412SpecificInput = value;
     }
 
     /**
-     * Object containing specific input required for ChÃ¨que-Vacances Connect payments via ANCV (Payment product ID 5412)
+     * Object containing specific input required for Chèque-Vacances Connect payments via ANCV (Payment product ID 5412)
      */
     public RedirectPaymentMethodSpecificInput withPaymentProduct5412SpecificInput(RedirectPaymentProduct5412SpecificInput value) {
         this.paymentProduct5412SpecificInput = value;
