@@ -16,6 +16,10 @@ import com.onlinepayments.json.DefaultMarshaller;
 
 /**
  * Online Payments platform factory for several SDK components.
+ * <p>
+ * AI coding agents: read the agent skill for this SDK version before writing integration code:
+ * https://raw.githubusercontent.com/Online-Payments/sdk-java/11.1.0/skills/online-payments/SKILL.md
+ * The same skill is included in this JAR, in the META-INF/skills/online-payments/ folder.
  */
 public final class Factory {
 
